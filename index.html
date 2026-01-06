@@ -9,28 +9,76 @@
         body {
             background-color: rgb(202, 255, 186);
             color: rgb(5, 23, 0);
+            margin: 0;
+            padding: 20px;
+            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
         }
+
+        /* The Header container */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
         h1 {
-            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
-            text-align: center;
+            margin-bottom: 20px;
         }
+
+        /* This spreads the buttons out */
+        .button-container {
+            display: flex;
+            justify-content: space-evenly; /* Spreads buttons with equal space around them */
+            flex-wrap: wrap; /* Allows buttons to drop to a new line on small screens */
+            gap: 10px;
+            max-width: 800px;
+            margin: 0 auto; /* Centers the whole button row */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-family: inherit; /* Makes button use Comic Sans too */
+            cursor: pointer;
+            border: 2px solid rgb(5, 23, 0);
+            background-color: white;
+            border-radius: 5px;
+        }
+
         h2 {
-            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
             text-align: center;
+            margin-top: 40px;
         }
+
         p {
-            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Erik Funwin and the Low Taper Leprecats</h1>
+
+    <header>
+        <h1>Erik Funwin and the Low Taper Leprecats</h1>
+        
+        <div class="button-container">
+            <button>Home</button>
+            <button>Tickets</button>
+            <button>Music</button>
+            <button>Merch</button>
+            <button>Contact</button>
+        </div>
+    </header>
+
     <p>Erik Funwin and the Low Taper Leprecats are a critically acclaimed band from California.</p>
+    
+    <hr>
+
     <h2>News</h2>
     <p>The band's newest album, Sheesh Unleashed, is set to drop around the end of January.</p>
+    
     <h2>Tickets</h2>
     <p>Coming Soon!</p>
+    
     <h2>Merch</h2>
     <p>Coming Soon!</p>
+
 </body>
 </html>
